@@ -16,32 +16,25 @@
 
 package com.indoorvivants.library
 
-object Main {
-  def main(args: Array[String]) = {
+object Main:
+  def main(args: Array[String]) =
     println(implicitly[TypeClass[(Boolean, Int)]].isPrimitive)
-  }
-}
 
-trait TypeClass[T] {
+trait TypeClass[T]:
   def isPrimitive: Boolean
-}
 
-object TypeClass {
+object TypeClass:
 
   def apply[A](implicit tc: TypeClass[A]): TypeClass[A] = tc
 
-  implicit val boolPrimitive: TypeClass[Boolean] = new TypeClass[Boolean] {
+  implicit val boolPrimitive: TypeClass[Boolean] = new TypeClass[Boolean]:
     def isPrimitive: Boolean = true
-  }
 
-  implicit val intPrimitive: TypeClass[Int] = new TypeClass[Int] {
+  implicit val intPrimitive: TypeClass[Int] = new TypeClass[Int]:
     def isPrimitive: Boolean = true
-  }
 
   implicit def tupled[A: TypeClass, B: TypeClass]: TypeClass[(A, B)] =
-    new TypeClass[(A, B)] {
+    new TypeClass[(A, B)]:
       def isPrimitive: Boolean =
         TypeClass[A].isPrimitive && TypeClass[B].isPrimitive
-    }
-
-}
+end TypeClass

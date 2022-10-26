@@ -1,13 +1,13 @@
 ## Scala Library template
 
+_This template is a version of [scala-library-template](https://github.com/indoorvivants/scala-library-template) but focused only on Scala 3_
+
 This is a template repository with some of the learnings from OSS Scala ecosystem applied.
 
 
 |                | JVM  | Scala.js (1.x) | Scala Native (0.4.0)  |
 | -------------- | ---  | -------------- | --------------------- |
-| Scala 2.12.13  | ✅   | ✅             | ✅                    |
-| Scala 2.13.5   | ✅   | ✅             | ✅                    |
-| Scala 3.1.x    | ✅   | ✅             | ✅                    |
+| Scala 3.2.x    | ✅   | ✅             | ✅                    |
 
 
 * Github Actions is used for CI and Releases
