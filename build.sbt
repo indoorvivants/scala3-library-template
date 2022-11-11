@@ -29,7 +29,7 @@ inThisBuild(
 )
 
 val Versions = new {
-  val Scala3          = "3.2.0"
+  val Scala3          = "3.2.1"
   val munit           = "1.0.0-M6"
   val organizeImports = "0.6.0"
   val scalaVersions   = Seq(Scala3)
