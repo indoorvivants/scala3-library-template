@@ -1,5 +1,5 @@
 addSbtPlugin("com.github.sbt" % "sbt-ci-release"    % "1.5.12")
-addSbtPlugin("com.eed3si9n"   % "sbt-projectmatrix" % "0.9.2")
+addSbtPlugin("com.eed3si9n"   % "sbt-projectmatrix" % "0.10.0")
 
 // Code quality
 addSbtPlugin("io.github.davidgregory084" % "sbt-tpolecat"    % "0.1.22")
@@ -14,5 +14,7 @@ addSbtPlugin("de.heikoseeberger" % "sbt-header"                % "5.9.0")
 addSbtPlugin("org.scalameta" % "sbt-mdoc" % "2.3.8")
 
 // Scala.js and Scala Native
-addSbtPlugin("org.scala-js"     % "sbt-scalajs"      % "1.14.0")
+
+addSbtPlugin("org.scala-js"     % "sbt-scalajs"      % "1.17.0")
+
 addSbtPlugin("org.scala-native" % "sbt-scala-native" % "0.5.5")
