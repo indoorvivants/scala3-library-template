@@ -102,6 +102,7 @@ val scalafixRules = Seq(
 
 val CICommands = Seq(
   "clean",
+  "scalafixEnable",
   "compile",
   "test",
   "docs/mdoc",
