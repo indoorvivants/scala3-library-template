@@ -4,12 +4,8 @@ Global / excludeLintKeys += scalaJSLinkerConfig
 
 inThisBuild(
   List(
-    scalafixDependencies += "com.github.liancheng" %% "organize-imports" % Versions.organizeImports,
-    semanticdbEnabled          := true,
-    semanticdbVersion          := scalafixSemanticdb.revision,
-    scalafixScalaBinaryVersion := scalaBinaryVersion.value,
-    organization               := "com.indoorvivants",
-    organizationName           := "Anton Sviridov",
+    organization     := "com.indoorvivants",
+    organizationName := "Anton Sviridov",
     homepage := Some(
       url("https://github.com/indoorvivants/scala-library-template")
     ),
@@ -29,10 +25,9 @@ inThisBuild(
 )
 
 val Versions = new {
-  val Scala3          = "3.3.4"
-  val munit           = "1.0.0-M11"
-  val organizeImports = "0.6.0"
-  val scalaVersions   = Seq(Scala3)
+  val Scala3        = "3.3.4"
+  val munit         = "1.0.2"
+  val scalaVersions = Seq(Scala3)
 }
 
 // https://github.com/cb372/sbt-explicit-dependencies/issues/27
@@ -58,8 +53,7 @@ lazy val core = projectMatrix
   .in(file("modules/core"))
   .defaultAxes(defaults*)
   .settings(
-    name := "core",
-    Test / scalacOptions ~= filterConsoleScalacOptions
+    name := "core"
   )
   .settings(munitSettings)
   .jvmPlatform(Versions.scalaVersions)
@@ -96,7 +90,8 @@ val noPublish = Seq(
   publishLocal / skip := true
 )
 
-val defaults = Seq(VirtualAxis.scalaABIVersion("3.2.0"), VirtualAxis.jvm)
+val defaults =
+  Seq(VirtualAxis.scalaABIVersion(Versions.Scala3), VirtualAxis.jvm)
 
 val scalafixRules = Seq(
   "OrganizeImports",
