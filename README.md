@@ -5,9 +5,9 @@ _This template is a version of [scala-library-template](https://github.com/indoo
 This is a template repository with some of the learnings from OSS Scala ecosystem applied.
 
 
-|                | JVM  | Scala.js (1.x) | Scala Native (0.4.0)  |
+|                | JVM  | Scala.js (1.x) | Scala Native (0.5.x)  |
 | -------------- | ---  | -------------- | --------------------- |
-| Scala 3.2.x    | ✅   | ✅             | ✅                    |
+| Scala 3.3.x    | ✅   | ✅             | ✅                    |
 
 
 * Github Actions is used for CI and Releases
