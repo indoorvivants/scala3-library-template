@@ -7,7 +7,7 @@ This is a template repository with some of the learnings from OSS Scala ecosyste
 
 |                | JVM  | Scala.js (1.x) | Scala Native (0.5.x)  |
 | -------------- | ---  | -------------- | --------------------- |
-| Scala 3.3.x    | ✅   | ✅             | ✅                    |
+| Scala 3 LTS    | ✅   | ✅             | ✅                    |
 
 
 * Github Actions is used for CI and Releases
