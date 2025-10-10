@@ -26,7 +26,7 @@ inThisBuild(
 
 val Versions = new {
   val Scala3        = "3.3.6"
-  val munit         = "1.1.1"
+  val munit         = "1.2.0"
   val scalaVersions = Seq(Scala3)
 }
 
