@@ -6,11 +6,11 @@ inThisBuild(
   List(
     organization     := "com.indoorvivants",
     organizationName := "Anton Sviridov",
-    homepage := Some(
+    homepage         := Some(
       url("https://github.com/indoorvivants/scala-library-template")
     ),
     startYear := Some(2020),
-    licenses := List(
+    licenses  := List(
       "Apache-2.0" -> url("http://www.apache.org/licenses/LICENSE-2.0")
     ),
     developers := List(
@@ -62,7 +62,7 @@ lazy val core = projectMatrix
   .enablePlugins(BuildInfoPlugin)
   .settings(
     buildInfoPackage := "com.indoorvivants.library.internal",
-    buildInfoKeys := Seq[BuildInfoKey](
+    buildInfoKeys    := Seq[BuildInfoKey](
       version,
       scalaVersion,
       scalaBinaryVersion
